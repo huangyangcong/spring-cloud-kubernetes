@@ -159,6 +159,19 @@
 							</execution>
 						</executions>
 						<configuration>
+							<generator>
+								<config>
+									<spring-boot>
+										<color>always</color>
+										<name>ychuang/${project.artifactId}:${project.version}</name>
+									</spring-boot>
+								</config>
+							</generator>
+							<pushRegistry>registry.cn-hangzhou.aliyuncs.com</pushRegistry>
+							<authConfig>
+								<username>1352640897@qq.com</username>
+								<password>hyc123456</password>
+							</authConfig>
 							<enricher>
 								<config>
 									<fmp-service>
