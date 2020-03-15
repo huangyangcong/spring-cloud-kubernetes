@@ -3,7 +3,7 @@ stages:
   steps:
   - runScriptConfig:
       image: maven
-      shellScript: mvn clean package fabric8:push  -Dcheckstyle.skip=true -Pkubernetes  -f
-        ./spring-cloud-kubernetes-examples/kubernetes-hello-world-example/pom.xml
+      shellScript: mvn clean package fabric8:push  -Dcheckstyle.skip=true -Pkubernetes
+        spring -f ./spring-cloud-kubernetes-examples/kubernetes-hello-world-example/pom.xml
 timeout: 60
 notification: {}
